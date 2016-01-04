@@ -1,0 +1,46 @@
+{
+	"name": "platformio",
+	"displayName": "platformio",
+	"description": "Support for platformio build system for compiling across mutliple systems",
+	"version": "0.0.1",
+	"publisher": "JasonFox",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+      "onCommand:extension.build",
+      "onCommand:extension.upload",
+      "onCommand:extension.clean",
+      "onCommand:extension.close",
+      "onCommand:extension.kill"
+	],
+	"main": "./platformio",
+	"contributes": {
+		"commands": [{
+			"command": "extension.build",
+			"title": "platformio: Build"
+		},
+        {
+			"command": "extension.upload",
+			"title": "platformio: Upload"
+		},
+        {
+			"command": "extension.clean",
+			"title": "platformio: Clean"
+		},
+        {
+			"command": "extension.close",
+			"title": "platformio: Close"
+		},
+        {
+			"command": "extension.kill-process",
+			"title": "platformio: Kill"
+		}]
+	},
+	"devDependencies": {
+		"vscode": "0.10.x"
+	}
+}
